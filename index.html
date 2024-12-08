@@ -6,51 +6,62 @@
     <title>Access Denied</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            text-align: center;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
+            text-align: center;
         }
         h1 {
-            font-size: 2.5em;
-            color: #d32f2f;
+            font-size: 2.5rem;
+            color: #dc3545;
             margin-bottom: 20px;
         }
         p {
-            font-size: 1.2em;
+            font-size: 1.2rem;
+            color: #6c757d;
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
+        .contact-info {
+            font-size: 0.9rem;
+            color: #495057;
             margin-bottom: 30px;
         }
-        a {
+        .button {
             display: inline-block;
-            text-decoration: none;
-            background-color: #1976d2;
+            padding: 12px 24px;
+            background-color: #007bff;
             color: #fff;
-            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1rem;
             border-radius: 5px;
-            font-size: 1em;
-            margin-top: 20px;
             transition: background-color 0.3s ease;
         }
-        a:hover {
-            background-color: #004ba0;
+        .button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.8rem;
+            color: #adb5bd;
         }
     </style>
 </head>
 <body>
     <h1>Access Denied</h1>
-    <p>
-        Sorry, you do not have permission to access this page or portal.
+    <p>We're sorry, but you do not have the necessary permissions to access this page or portal.</p>
+    <p class="contact-info">
+        If you think this is a mistake, please contact your administrator or email us at 
+        <a href="mailto:support@example.com">support@example.com</a>.
     </p>
-    <p>
-        If you believe this is an error, please contact your system administrator or 
-        <a href="mailto:support@example.com">support@example.com</a> for assistance.
-    </p>
-    <a href="/dashboard">Return to Dashboard</a>
+    <a href="/dashboard" class="button">Return to Dashboard</a>
+    <footer>&copy; 2024 Your Company Name. All rights reserved.</footer>
 </body>
 </html>
